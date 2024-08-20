@@ -1,35 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Title</title>
+    <title>Author Name</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About the Author</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>Sandra Hayes-Gardiner</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="book-hero">
-            <img src="./book-cover.pdf" alt="Book Cover" class="book-cover">
-            <h1 class="book-title">Book Title</h1>
-            <h2 class="book-subtitle">Subtitle of the Book</h2>
-            <p class="book-description">This is a brief description of the book, summarizing its contents and themes.</p>
-            <a href="#" class="buy-now-button">Buy Now</a>
-        </section>
-    </main>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About the Author</h2>
+            <img src="sandra.jpg" alt="Book Title">
+            <p>Sandra invites you on a journey every Canadian can take. By digging into her own story, she beckons you
+                to come along to reconcile and make new a flawed history that left out Canada’s Indigenous origin. Join
+                her as she recalls her childhood, cheering on Cree dog mushers, keeping her feet warm in her treasured
+                moose hide mukluks. Join her, too, as she reaches the inescapable realization that she knew little of
+                her Indigenous neighbours and that she had gathered her own set of discriminatory beliefs over the
+                years. Growing up in the 1950s and ‘60s, she absorbed the notions of continuing racism and prejudice
+                against Indigenous people. After graduating from university in Winnipeg she returned home to The Pas,
+                Manitoba and became a social worker with the federal government. She was responsible for removing ‘at
+                risk’ Indigenous children from their families, often sending them to residential school. Profoundly
+                affected by a brutal murder near The Pas in 1971, Sandra eventually began listening to her intuition,
+                and followed her abiding curiosity, the wisdom of Elders and Spirit. She was led to advocacy work with
+                Indigenous communities and developed a passionate dedication to unlearning and relearning Canada’s real
+                history. Sandra faced the task of ‘crossing the river’ between two communities, the mostly white town
+                where she lived, and the Cree nation on the other side, going back and forth, both symbolically and
+                literally many times. You will be shocked, saddened, encouraged and ultimately challenged to ask
+                yourself the questions she asks herself even now—what kind of Canada do you want and how will you be
+                part of that unfolding story?</p>
+        </div>
+    </section>
+
+    <section id="books" class="section">
+        <div class="container">
+            <h2>Books</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <img src="backgroundwithtext.jpg" alt="Book Title">
+                    <h3>Crossing the River - An unsettling memoir</h3>
+                    <p>Sandra invites you on a journey every Canadian can take. By digging into her own story, she
+                        beckons you to come along to reconcile and make new a flawed history that left out Canada’s
+                        Indigenous origin.</p>
+                </div>
+                <div class="book-item">
+                    <img src="backgroundwithtext.jpg" alt="Book Title">
+                    <h3>The Other One!</h3>
+                    <p>It's also super amazing!</p>
+                </div>
+                <!-- Add more books as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2>Reviews</h2>
+            <div class="review-list">
+                <div class="review-item">
+                    <p>Sandra’s words are ripe with the power to burst myths embedded deeply, invisibly in how
+                        generations of settlers, including my Scottish/English/Canadian family, justified racist white
+                        dominance in Canada. Find it in yourself to be changed by joining Sandra in Crossing the River.
+                    </p>
+                    <p><strong>— The Honourable Marilou McPhedran</strong></p>
+                    <p><strong>Senate of Canada, Ottawa</strong></p>
+                </div>
+                <div class="review-item">
+                    <p>Sandra’s struggle to discover what reconciliation means in her own life is evident throughout her
+                        story. The various encounters she has had with systemic racism and the continuing impact of
+                        injustice experienced by us, as Indigenous peoples, has weighed heavily on her. This book is a
+                        great contribution to the new context in Canada. In my lifetime I have moved from the acceptance
+                        of colonial oppression to angry reactionary behaviour and more recently I dream of peace and
+                        justice on this land.</p>
+                    <p><strong>—The Very Reverend Stan McKay</strong></p>
+                    <p><strong>Moderator, The United Church of Canada, 1992 - 1994</strong></p>
+                    <p><strong>Ochekwi-Sipi Fisher River Cree Nation</strong></p>
+                </div>
+                <!-- Add more reviews as needed -->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Author's Name. All rights reserved.</p>
+        <p>&copy; 2024 Author Name. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
